@@ -4,26 +4,73 @@
 
     <head>
         <title>Seamingly Simple</title>
+        <link rel-="styleheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Centuar">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
 
 
     <body>
-        <nav><ul>
-            <li>Classes</li>
-            <li>Workshops</li>
-            <li>Longarm Services</li>
-            <li>Contact</li>
-            </ul></nav>
-            <img alt = "logo"><a href = "#"></a>
+        <!-- Navigation -->
+        <header class="header">
+            <nav><ul class="topnav">
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Longarm Services</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul></nav> 
+        </header><!-- /Navigation -->
         <div>
-            <h1>About Us</h1>
-            <p>At Seamingly Simple, our goal is to promote creativity through sewing. We offer basic sewing and quilting classes, as well as longarm quilting services.</p>
+            <img class ="logo" alt = "logo"><a href = "#"></a>
+            <hr class="line">
         </div>
-        <div>
-            <img alt = "sewingMachine"> <a href = "#"></a>
-            <h2>Our Mission</h2>
-            <p>Misson Statement</p>
-        </div>
+        <!--About Section -->
+        <main class="about">
+<!--
+            <div class="sewingmachine">
+                <img src="img/SewingMachine.JPG" alt = "sewingMachine"> 
+            </div>
+-->
+            <div>
+                <h1>About Us</h1>
+                <p>At Seamingly Simple, our goal is to promote creativity through sewing. We are a family owned and operated business that offers basic sewing and quilting classes, as well as longarm quilting services. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </main> <!-- /About Section -->
+        
+        <!-- Classes Section -->
+        <div class ="row" id="classes">
+            <h1><strong>Classes</strong></h1>
+            <div class ="col-xs-4 panel text-center">
+                <img class="sewingclass" src="img/firstclass4.jpg" alt="two women sewing">
+                <button class="collapsible">Beginner</button>
+                <div class="content">
+                    <p>This class is for the beginner. These students have little to no sewing knowlegde. Sewing basics, such as parts of the machine, how to stitch a straight line, and proper cutting and pinning tachniques will be taught during this class.</p>
+                </div>
+            </div>
+            <div class ="col-xs-4 panel text-center">
+                <img class="sewingclass" src="img/firstclass.jpg" alt="women holding tote bags">
+                 <button class="collapsible">Intermediate</button>
+                <div class="content">
+                    <p>This class is for sewist who know how to operate a sewing machine and sew basic stitches. More complex tasks, such as, darts, zippers, and more complicated stitches will be taught during this class. </p>
+                </div>
+            </div>
+            <div class ="col-xs-4 panel text-center">
+                <img class="sewingclass" src="img/firstclass5.jpg" alt="woman sewing">
+                <button class="collapsible">Open Sew</button>
+                <div class="content">
+                    <p>Open sew is time when the sewing studio is open to the public. An instructor will be present to assist with your personal projects. Sewists of all ability levels are invited to attend!</p>
+                </div>
+            </div>
+    
+        </div> <!--/Classes Section -->
+    <script src ="app.js"></script>
     </body>
+    
+    <footer class="footer">
+        <p>4482 Robards Lane</p><br>
+        <p>Louisville, KY 40218</p>
+    </footer>
 
 </html>
