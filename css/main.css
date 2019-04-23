@@ -1,15 +1,16 @@
 /* Basic Styles */
+.topnav,
 .about,
-.topnav, 
-button, 
-h1,{
-    font-family:'Centaur', serif;
+button,
+h1, 
+.longarmhead {
+    font-family: 'Centaur';
 }
 /* Header */ 
 .header {
     padding: 20px;
     text-align: center;
-    background: #41BCBC ;
+    background: #0089A1;
     font-size: 20px;
 }
 
@@ -32,25 +33,43 @@ li a {
     display: block;
     padding: 10px;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .topnav a:hover {
-    font-weight: bold;
+    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+    text-decoration: none;
+}
+
+/* Logo and Line */
+.logo {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 40%;
+    
 }
 
 .line {
     display: block;
     height: 1px;
     bordeR: 0;
-    border-top: 4px solid #41bcbc;
+    border-top: 4px solid #0089A1;
     margin: 1em 0;
     padding: 0;
 }
 
 /* Main Page */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
 p {
-    font-size:1.3em;
+    font-size:1.5em;
+    font-family: 'Montserrat';
 }
 .column {
     float: left;
@@ -79,6 +98,7 @@ p {
     padding-top: 1em;
     text-align: center;
     font-family: 'Centaur';
+    font-size: 3em;
     
 }
 
@@ -86,6 +106,7 @@ p {
     padding-bottom: 30px;
     height: 275px;
     width: 80%;
+
 }
 
 button {
@@ -94,8 +115,8 @@ button {
     height: 100%;
     padding-top: .5em;
     padding-bottom: .5em;
-    font-size: 24px;
-    font-family: 'Centaur';
+    border-radius: 20px;
+  
 }
 
 .collapsible {
@@ -109,7 +130,8 @@ button {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 1.3em;
+    font-size: 30px;
+    font-family: 'Centaur';
     
 }
 .active, .collapsible:hover {
@@ -123,17 +145,45 @@ button {
     display: none;
     overflow: hidden;
     background-color: white;
-    font-family: serif;
+    font-family: 'Monserrat';
     text-align: left;
 }
+
+/* Longarm Services */
+.longarmhead{
+    font-weight: bold;
+    color: #0089a1;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.longarmp {
+    font-family: 'Monserrat';
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    width: 30%;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 /* Footer */
 .footer {
-    text-align: center;
-    background-color:#41bcbc;
+    text-align: left;
+    background-color:#0089A1;
     color:white;
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom:10px;
+    padding-left: 30px;
 }
 
 br{
