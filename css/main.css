@@ -19,7 +19,7 @@ h1,
 .topnav {
     list-style-type: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
  
 li{
@@ -31,9 +31,9 @@ li{
 li a {
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 0 30px 0 30px;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .topnav a:hover {
@@ -48,7 +48,7 @@ li a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    width: 40%;
+    width: 30%;
     
 }
 
@@ -62,71 +62,79 @@ li a {
 }
 
 /* Main Page */
-h1 {
+.home {
+    
+    margin: 0 200px 0 200px;
+}
+.about {
     font-size: 3em;
     font-weight: bold;
+    text-align: center;
 }
 
-p {
+.homeContent {
     font-size:1.5em;
     font-family: 'Montserrat';
 }
-.column {
-    float: left;
-}
-
-.left{
-    width: 50%;
-    padding-left: 50px;
-}
-
-.right {
-    width:50%;
-    padding-left: 50px;
-}
 
 .sewingmachine {
-    overflow: none;
-    height: 100px; 
-    width:100px;
-    padding-top: 40px;
+    display: block;
+    width: 100%;
+    margin-right: 200px;
 }
 
 
 /* Classes */
-#classes h1 {
-    padding-top: 1em;
+.classTitle {
+    padding-top: .5em;
     text-align: center;
     font-family: 'Centaur';
     font-size: 3em;
-    
+    margin-right: auto;
+    color: #0089A1;
+}
+
+#topclasses,
+#bottomClasses {
+    font-family: 'Monserrat';
+    font-size: 1.3em;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;  
+}
+
+#classes {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .sewingclass {
     padding-bottom: 30px;
-    height: 275px;
-    width: 80%;
-
+    height: 200px;
+    width: 100%;
 }
 
 button {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 60px;
     padding-top: .5em;
     padding-bottom: .5em;
+/*    margin-left: 0;*/
     border-radius: 20px;
+    margin-top: auto;
+    align-self: flex-start;
   
 }
 
 .collapsible {
-    background-color: #41bcbc;
+    background-color: #0089A1;
     color: white;
     cursor: pointer;
     padding-top 30px;
-    margin-left: 10%;
-    margin-right: 15%;
-    width: 80%;
+    padding-right: 5px;
+    margin-right: 5%;
+    width: 100%;
     border: none;
     text-align: center;
     outline: none;
@@ -135,7 +143,7 @@ button {
     
 }
 .active, .collapsible:hover {
-    background-color: #349898;
+    background-color: #0086A1;
 }
 
 .content {
@@ -147,37 +155,110 @@ button {
     background-color: white;
     font-family: 'Monserrat';
     text-align: left;
+    border-bottom: none;
 }
 
-/* Longarm Services */
+
+
+/* Longarm Services Page */
+#longarm {
+    margin-left: 200px; 
+    margin-right: 200px;
+}
 .longarmhead{
     font-weight: bold;
     color: #0089a1;
     font-size: 3em;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .longarmp {
     font-family: 'Monserrat';
+    font-size: 1.3em;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-img {
+.longarmpic {
     width: 30%;
     border-radius: 5px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
 }
 
+/* Contact Page */
+.contactHead {
+    text-align: center;
+    font-family: "Centuar";
+    color: #0089A1;
+}
 
+form {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    background: #e5f2f5;
+}
+
+label {
+    display: inline-block;
+    margin: 20px 20px 20px 5px;
+    font-family: "Montserrat";
+    font-size: 1.3em; 
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: 1px solid #0089A1;
+    border-radius: 4px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 12px 15px;
+    margin: 10px 0 30px 0;
+    box-sizing: border-box;
+    border: 1px solid #0089A1;
+    border-radius: 4px;
+}
+
+input:focus {
+    background-color: #e5f2f5;
+    border: 1px solid #0086A1;
+}
+
+textarea:focus {
+    background-color: #e5f2f5;
+    border: 1px solid #0086A1;  
+}
+
+.btnSubmit {
+    background-color: #0089A1;
+    width: 100%;
+    margin: 20px 5px;
+    padding: 12px 15px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bottomClasses {
+    margin-top: 20px;
+}
 
 /* Footer */
 .footer {
-    text-align: left;
+    text-align: center;
     background-color:#0089A1;
     color:white;
     margin-top: 30px;
@@ -193,16 +274,114 @@ br{
 }
 
 /* Clearfix */
+/*
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
-    
 }
+*/
+
 /* Media Queries */
-@media (min-width: 789px) {
-    .left {
-        100%;
-    }  
+/***********************/
+/* Navigation Media Queries */
+@media (min-width: 320px) {
+    .logo {
+        width: 40%;
+    }
+    .main, 
+    .row,{
+        margin: 0 50px 0 50px;
+    } 
     
+    .topnav{
+        display: flex;
+        flex-direction: column;
+        font-size: .8em;
+       
+    }
+    
+    .topnav li {
+         border-bottom: solid 1px white;
+    }
+    
+    
+/* Classes Page */
+    .topclasses {
+        text-align: center;
+        padding: 0; 
+    }
+/* Form Page */
+    form {
+        margin: 0 10%;
+    }
+}
+
+
+
+@media (min-width: 925px){
+    .logo {
+        width: 25%;
+    }
+    .topnav {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.4em;
+    }
+    
+    .topnav li {
+        border: none;
+    }
+    
+    form {
+        margin: 0 25%;
+    }
+}
+
+/*Classes Page Media Queries */ 
+@media (min-width: 992px) and (max-width: 1118px) {
+    .collapsible {
+        font-size: 20px;
+    }
+    .content {
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right: 5px; 
+        margin-left: 5px;
+    }
+}
+@media (min-width: 704px) and (max-width: 991px) {
+    .sewingclass {
+        height: 300px; 
+    }
+    .collapsible {
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 667px) {
+    
+    #classes {
+       
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    #topclasses,
+    #bottomClasses {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .collapsible {
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
 }

@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
         <title>Seamingly Simple - Classes</title>
+        <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel-="styleheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Centuar">
-        
+        <link rel-"stylsheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
 
     <body>
-        <h1>Classes</h1>
-        <button class="collapsible">Beginner</button>
-            <div class="content">
-                <p>This class is for the beginner. These students have little to no sewing knowlegde. Sewing basics, such as parts of the machine, how to stitch a straight line, and proper cutting and pinning tachniques will be taught during this class.</p>
+        <!-- Navigation -->
+        <header class="header">
+            <nav><ul class="topnav">
+                <li><a href= "index.html">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="longarm.html">Longarm Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                </ul></nav> 
+        </header><!-- /Navigation -->
+         <div>
+            <img class ="logo" alt = "logo" src="img/businesscard.png">
+            <hr class="line">
+        </div>
+         <!-- Classes Section -->
+        <div> 
+            <h1 class="classTitle" id="classes"><strong>Classes</strong></h1>
+            <div class="row">
+                <p class="col-md-12" id="topclasses">We offer a variety of classes! We are also willing to discuss individual classes for all ability levels.</p>
             </div>
-        <button class="collapsible">Intermediate</button>
-            <div class="content">
-                <p>This class is for sewist who know how to operate a sewing machine and sew basic stitches. More complex tasks, such as, darts, zippers, and more complicated stitches will be taught during this class. </p>
+        </div>
+            
+        <div class ="row" id="classes">
+            <div class ="col-md-3 panel text-center">
+                <img class="sewingclass" src="img/firstclass4.jpg" alt="two women sewing">
+                <button class="collapsible">Beginner</button>
+                <div class="content">
+                    <p>This class is for the beginner. These students have little to no sewing knowlegde. Sewing basics, such as parts of the machine, how to stitch a straight line, and proper cutting and pinning tachniques will be taught during this class.</p>
+                </div>
             </div>
-        <button class="collapsible">Open Sew</button>
-            <div class="content">
-                <p>Open sew is time when the sewing studio is open to the public. An instructor will be present to assist with your personal projects. Sewists of all ability levels are invited to attend!</p>
+            <div class ="col-md-3 panel text-center">
+                <img class="sewingclass" src="img/firstclass.jpg" alt="women holding tote bags">
+                 <button class="collapsible">Intermediate</button>
+                <div class="content">
+                    <p>This class is for sewist who know how to operate a sewing machine and sew basic stitches. More complex tasks, such as, darts, zippers, and more complicated stitches will be taught during this class. </p>
+                </div>
             </div>
+            <div class ="col-md-3 text-center">
+                <img class="sewingclass" src="img/firstclass5.jpg" alt="woman sewing">
+                <button class="collapsible">Open Sew</button>
+                <div class="content">
+                    <p>Open sew is time when the sewing studio is open to the public. An instructor will be present to assist with your personal projects. Sewists of all ability levels are invited to attend!</p>
+                </div>
+            </div>
+            <div class ="col-md-3 text-center">
+                <img class="sewingclass" src="img/firstclass2.jpg" alt="woman sewing">
+                <button class="collapsible">Individual</button>
+                <div class="content">
+                    <p>Individual classes are offered for one-on-one sewing instruction. You can bring your own project to complete during your lessons or we can provide one.</p>
+                </div>
+            </div> 
+        </div><!--/Classes Section -->
+        <p id="bottomClasses">If you are unsure which class would be right for you, we can help you find the right fit!</p>
          <script src ="app.js"></script>
     </body>
 
-    <footer>
-    
+    <footer class="footer">
+        <p>4482 Robards Lane</p><br>
+        <p>Louisville, KY 40218</p>
     </footer>
+
 </html>
