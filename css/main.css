@@ -66,8 +66,10 @@ li a {
     
     margin: 0 200px 0 200px;
 }
+
 .about {
     font-size: 3em;
+    color: #0089A1;
     font-weight: bold;
     text-align: center;
 }
@@ -79,8 +81,11 @@ li a {
 
 .sewingmachine {
     display: block;
-    width: 100%;
-    margin-right: 200px;
+    width: 30%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    
+    
 }
 
 
@@ -198,8 +203,8 @@ button {
 }
 
 form {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 20px;
     background: #e5f2f5;
 }
@@ -304,13 +309,24 @@ br{
     .topnav li {
          border-bottom: solid 1px white;
     }
+/* Basic Styles */
     
+    .home,
+    #longarm {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .about, {
+        font-size: 10px;
+    }
     
 /* Classes Page */
     .topclasses {
         text-align: center;
         padding: 0; 
     }
+
 /* Form Page */
     form {
         margin: 0 10%;
