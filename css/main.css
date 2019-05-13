@@ -77,6 +77,8 @@ li a {
 .homeContent {
     font-size:1.5em;
     font-family: 'Montserrat';
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .sewingmachine {
@@ -166,10 +168,12 @@ button {
 
 
 /* Longarm Services Page */
+/*
 #longarm {
     margin-left: 200px; 
     margin-right: 200px;
 }
+*/
 .longarmhead{
     font-weight: bold;
     color: #0089a1;
@@ -182,8 +186,8 @@ button {
 .longarmp {
     font-family: 'Monserrat';
     font-size: 1.3em;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .longarmpic {
@@ -312,7 +316,7 @@ br{
 /* Basic Styles */
     
     .home,
-    #longarm {
+    #longarmh {
         margin-right: 20px;
         margin-left: 20px;
     }
